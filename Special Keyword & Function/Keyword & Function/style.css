@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30%;
+    padding: 50px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20%;
+}
+
+i {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container1 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.container2 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-auto-columns: 100px 50px;
+}
+
+.container3 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-auto-flow: column;
+}
+
+.container4 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-auto-flow: row;
+}
+
+.container5 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr repeat(9, 1fr);
+}
+
+.container6 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 1fr repeat(9, 1fr);
+}
+
+.container7 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+}
+
+.container8 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.container9 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.container10 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+}
+
+.container11 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
+}
+
+.items {
+    background-color: rgb(138,209,254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.items:nth-child(even) {
+    background-color: rgb(255, 124, 124);
+}

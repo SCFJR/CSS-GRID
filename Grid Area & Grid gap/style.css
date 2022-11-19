@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    /* border: 3px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+        'footer footer footer'
+        ;
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+/* .item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+  } */
+
+  .header {
+    grid-area: header;
+    background-color: aqua;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: rgb(255, 184, 107);
+  }
+
+  .content {
+    grid-area: content;
+    background-color: rgb(235, 41, 41);
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #ddd;
+  }
+
+.container2 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-rows: [baris1-mulai] 50px 
+                        [baris1-akhir baris1-akhir] 50px 
+                        [baris2-akhir];
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas:
+        'header header header'
+        'footer footer footer'; */
+    grid-template: [baris1-mulai] 'header header header'50px
+                   [baris1-akhir baris1-mulai] 'foote footer footer' 100px / 
+                   [baris2-akhir] 1fr 1fr 2fr;
+}
+
+.items {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+.items:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+  }
+
+.container3 {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 5px;
+    row-gap: 5px; */
+    gap: 5px;
+}
+
+.items2 {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+.items2:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+  }
+
+/* Responsive Breakpoint */
+
+@media screen and (min-width: 576) {
+    .container {
+        grid-template-areas: 
+            'header header header'
+            'sidebar content content'
+            'sidebar content content'
+            'footer footer footer'
+            ;
+    } 
+  }
