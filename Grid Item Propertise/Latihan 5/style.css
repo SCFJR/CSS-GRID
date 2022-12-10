@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+h1 {
+    margin-left: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    margin-left: 10%;
+    border: 2px solid black;
+    width: 400px;
+    height: 230px;
+}
+
+/* code 1 */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+
+    /* grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4]; */
+}
+
+.item {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-item {
+    justify-self: start;
+    /* justify-self: end; */
+    /* justify-self: center; */
+    /* justify-self: stretch; */
+    width: 130px;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+/* code 2 */
+.container2 {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+
+    /* grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4]; */
+}
+
+.item2 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-item2 {
+    /* justify-self: start; */
+    justify-self: end;
+    /* justify-self: center; */
+    /* justify-self: stretch; */
+    width: 130px;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+/* code 3 */
+.container3 {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+
+    /* grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4]; */
+}
+
+.item3 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-item3 {
+    /* justify-self: start; */
+    /* justify-self: end; */
+    justify-self: center;
+    /* justify-self: stretch; */
+    width: 130px;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+/* code 4 */
+.container4 {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+
+    /* grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4]; */
+}
+
+.item4 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-item4 {
+    /* justify-self: start; */
+    /* justify-self: end; */
+    /* justify-self: center; */
+    justify-self: stretch;
+    border: 1px solid black;
+    background-color: lightblue;
+}
