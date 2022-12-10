@@ -17,6 +17,10 @@ img {
     height: 200px;
 }
 
+hr {
+    border: 1px solid black;
+}
+
 .dua {
     margin-left: 10%;
     border: 2px solid black;
