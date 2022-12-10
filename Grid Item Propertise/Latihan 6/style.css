@@ -17,6 +17,10 @@ img {
     height: 230px;
 }
 
+hr {
+    border: 1px solid black;
+}
+
 /* code 1 */
 .container {
     width: 80%;
